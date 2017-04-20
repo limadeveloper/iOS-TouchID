@@ -13,6 +13,7 @@
 		CEE01E471EA8FCDE005116BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE01E451EA8FCDE005116BF /* Main.storyboard */; };
 		CEE01E491EA8FCDE005116BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE01E481EA8FCDE005116BF /* Assets.xcassets */; };
 		CEE01E4C1EA8FCDE005116BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE01E4A1EA8FCDE005116BF /* LaunchScreen.storyboard */; };
+		CEF19C2C1EA901D7009FFADC /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF19C2B1EA901D7009FFADC /* Global.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CEE01E481EA8FCDE005116BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE01E4B1EA8FCDE005116BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE01E4D1EA8FCDE005116BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF19C2A1EA901D7009FFADC /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		CEF19C2B1EA901D7009FFADC /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 			children = (
 				CEE01E3F1EA8FCDE005116BF /* AppDelegate.h */,
 				CEE01E401EA8FCDE005116BF /* AppDelegate.m */,
+				CEF19C2A1EA901D7009FFADC /* Global.h */,
+				CEF19C2B1EA901D7009FFADC /* Global.m */,
 				CEE01E3D1EA8FCDE005116BF /* main.m */,
 				CEE01E4D1EA8FCDE005116BF /* Info.plist */,
 				CEE01E481EA8FCDE005116BF /* Assets.xcassets */,
@@ -167,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF19C2C1EA901D7009FFADC /* Global.m in Sources */,
 				CEE01E441EA8FCDE005116BF /* ViewController.m in Sources */,
 				CEE01E411EA8FCDE005116BF /* AppDelegate.m in Sources */,
 				CEE01E3E1EA8FCDE005116BF /* main.m in Sources */,

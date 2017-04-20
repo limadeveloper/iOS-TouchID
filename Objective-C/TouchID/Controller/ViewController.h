@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface ViewController : UIViewController
 
+#pragma mark - Properties
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
-    
+#pragma mark - Actions
+-(IBAction)startTouchId:(UIButton *)sender;
+
 @end
 

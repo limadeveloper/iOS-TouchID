@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="nU5-Og-tNs">
             <objects>
-                <viewController id="9C0-OM-1w7" customClass="ViewController" customModule="TouchID" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9C0-OM-1w7" customClass="ViewController" customModule="TouchID" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uOZ-t4-XPd"/>
                         <viewControllerLayoutGuide type="bottom" id="FLi-WH-hLF"/>
@@ -41,7 +41,7 @@
                                     <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startTouchIdWithSender:" destination="9C0-OM-1w7" eventType="touchUpInside" id="rLP-z5-Ufv"/>
+                                    <action selector="startTouchId:" destination="9C0-OM-1w7" eventType="touchUpInside" id="VER-Lb-ChL"/>
                                 </connections>
                             </button>
                         </subviews>
