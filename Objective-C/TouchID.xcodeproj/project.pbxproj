@@ -74,7 +74,7 @@
 				CEE01E4D1EA8FCDE005116BF /* Info.plist */,
 				CEE01E481EA8FCDE005116BF /* Assets.xcassets */,
 			);
-			name = Support;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		CEE01E531EA8FD2D005116BF /* Controller */ = {
@@ -83,7 +83,7 @@
 				CEE01E421EA8FCDE005116BF /* ViewController.h */,
 				CEE01E431EA8FCDE005116BF /* ViewController.m */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CEE01E541EA8FD36005116BF /* UI */ = {
@@ -92,7 +92,7 @@
 				CEE01E4A1EA8FCDE005116BF /* LaunchScreen.storyboard */,
 				CEE01E451EA8FCDE005116BF /* Main.storyboard */,
 			);
-			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +182,7 @@
 				CEE01E461EA8FCDE005116BF /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		CEE01E4A1EA8FCDE005116BF /* LaunchScreen.storyboard */ = {
@@ -190,6 +191,7 @@
 				CEE01E4B1EA8FCDE005116BF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,7 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9572JBENB;
-				INFOPLIST_FILE = TouchID/Info.plist;
+				INFOPLIST_FILE = TouchID/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.limadeveloper.tests.touchid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,7 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9572JBENB;
-				INFOPLIST_FILE = TouchID/Info.plist;
+				INFOPLIST_FILE = TouchID/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.limadeveloper.tests.touchid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,6 +332,7 @@
 				CEE01E521EA8FCDE005116BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

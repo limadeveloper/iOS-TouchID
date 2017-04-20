@@ -40,8 +40,8 @@
 		0910FEBD1AE73E09000A19B6 = {
 			isa = PBXGroup;
 			children = (
-				0910FEC71AE73E09000A19B6 /* Products */,
 				0910FEC81AE73E09000A19B6 /* TouchID */,
+				0910FEC71AE73E09000A19B6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +56,9 @@
 		0910FEC81AE73E09000A19B6 /* TouchID */ = {
 			isa = PBXGroup;
 			children = (
+				CEB1F12D1EA8E510006FEC66 /* UI */,
 				CEB1F12A1EA8E49B006FEC66 /* Controller */,
 				0910FEC91AE73E09000A19B6 /* Support */,
-				CEB1F12D1EA8E510006FEC66 /* UI */,
 			);
 			path = TouchID;
 			sourceTree = "<group>";
@@ -68,10 +68,9 @@
 			children = (
 				0910FECB1AE73E09000A19B6 /* AppDelegate.swift */,
 				CEE01E2E1EA8EC9B005116BF /* Global.swift */,
-				0910FED21AE73E09000A19B6 /* Images.xcassets */,
 				0910FECA1AE73E09000A19B6 /* Info.plist */,
+				0910FED21AE73E09000A19B6 /* Images.xcassets */,
 			);
-			name = Support;
 			path = Support;
 			sourceTree = "<group>";
 		};
@@ -80,7 +79,6 @@
 			children = (
 				0910FECD1AE73E09000A19B6 /* ViewController.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -90,7 +88,6 @@
 				CEB1F12B1EA8E4C1006FEC66 /* LaunchScreen.storyboard */,
 				0910FECF1AE73E09000A19B6 /* Main.storyboard */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
