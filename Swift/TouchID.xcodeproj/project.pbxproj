@@ -12,6 +12,7 @@
 		0910FED11AE73E09000A19B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0910FECF1AE73E09000A19B6 /* Main.storyboard */; };
 		0910FED31AE73E09000A19B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0910FED21AE73E09000A19B6 /* Images.xcassets */; };
 		CEB1F12C1EA8E4C1006FEC66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB1F12B1EA8E4C1006FEC66 /* LaunchScreen.storyboard */; };
+		CEE01E2F1EA8EC9B005116BF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE01E2E1EA8EC9B005116BF /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0910FED01AE73E09000A19B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0910FED21AE73E09000A19B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEB1F12B1EA8E4C1006FEC66 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEE01E2E1EA8EC9B005116BF /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				0910FECB1AE73E09000A19B6 /* AppDelegate.swift */,
+				CEE01E2E1EA8EC9B005116BF /* Global.swift */,
 				0910FECA1AE73E09000A19B6 /* Info.plist */,
 				0910FED21AE73E09000A19B6 /* Images.xcassets */,
 			);
@@ -115,10 +118,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "John Silva";
+				ORGANIZATIONNAME = "John Lima";
 				TargetAttributes = {
 					0910FEC51AE73E09000A19B6 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = G9572JBENB;
 						LastSwiftMigration = 0830;
 					};
 				};
@@ -161,6 +165,7 @@
 			files = (
 				0910FECE1AE73E09000A19B6 /* ViewController.swift in Sources */,
 				0910FECC1AE73E09000A19B6 /* AppDelegate.swift in Sources */,
+				CEE01E2F1EA8EC9B005116BF /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9572JBENB;
 				INFOPLIST_FILE = TouchID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.limadeveloper.tests.touchid;
@@ -283,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9572JBENB;
 				INFOPLIST_FILE = TouchID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.limadeveloper.tests.touchid;

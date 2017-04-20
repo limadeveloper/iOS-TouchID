@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textField.resignFirstResponder()
+    }
 
     // MARK: - Actions
     @IBAction fileprivate func startTouchId(sender: UIButton) {
@@ -27,27 +31,21 @@ class ViewController: UIViewController {
     
     fileprivate func useTouchID() {
         
-        let authContext = LAContext()
-        let authPolicy = LAPolicy.deviceOwnerAuthenticationWithBiometrics
+        let context = LAContext()
+        let policy = LAPolicy.deviceOwnerAuthenticationWithBiometrics
+        var authError: NSError? = nil
         
-        var authError: NSErrorPointer? = nil
-        if (authContext.canEvaluatePolicy(authPolicy, error: authError!)) {
-            
-            authContext.evaluatePolicy(authPolicy, localizedReason: "Coloque o dedo no sensor biométrico do seu device", reply: {(success: Bool, error: NSError?) in
-                
-                DispatchQueue.main.async(execute: { () -> Void in
-                    if (success) {
-                        self.textField.text = "Isto é uma mensagem secreta"
-                    }else {
-                        print("Dedo errado")
-                    }
-                })
-            } as! (Bool, Error?) -> Void)
-            
-        }else {
-            print("Seu dispositivo não suporta o Touch ID")
+        guard context.canEvaluatePolicy(policy, error: &authError) else {
+            print(Texts.Messages.unsupportedDevice)
+            return
         }
+        
+        context.evaluatePolicy(policy, localizedReason: Texts.Messages.putFingerOnSensor, reply: { (success, error) in
+            DispatchQueue.main.async {
+                guard success else { print("Error: \(Texts.Messages.wrongFinger) \(error?.localizedDescription ?? "")"); return }
+                self.textField.text = Texts.Messages.secretMessage
+            }
+        })
     }
-
 }
 
